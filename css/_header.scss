@@ -64,8 +64,8 @@
     position: absolute;
     width: 18px;
     min-height:186px;
-    top:240px;
-    right:44px;
+    top:218px;
+    right:125px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,13 +88,13 @@
       background-color: $red_color;
       &:before {
         content:"";
-        border:1px solid $red_color;
-        width: 16px;
-        height: 16px;
+        border: 1px solid $red_color;
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 1px;
+        left: 1px;
       }
     }
 
