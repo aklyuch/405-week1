@@ -79,7 +79,9 @@
     &_text-block {
       margin-bottom: 38px;
     }
-
+    &_buttons {
+      justify-content: flex-start;
+    }
     &_input {
       margin-bottom: 42px;
     }
