@@ -1,9 +1,16 @@
-.body {
+.body-wrapper {
   background-color: white;
+  color: black;
+  font-family: $font_play;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  width: 1100px;
+  width: $container_width;
   margin: 0 auto;
 }
 
@@ -13,4 +20,38 @@
 
 .gray-light-section {
   background-color: $gray_color;
+}
+
+.dark-section {
+  background-color: #161616;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ul li, p {
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 17px 41px;
+  border-radius: 100px;
+  color: white;
+  background-color: $red_color;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &_empty {
+    text-transform: none;
+    background: none;
+    border:none;
+  }
 }

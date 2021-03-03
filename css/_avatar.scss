@@ -1,0 +1,8 @@
+.avatar {
+  height:74px;
+  width:74px;
+  border-radius: 50%;
+  &_active {
+    border:1px solid $red_color;
+  }
+}
