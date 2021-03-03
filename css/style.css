@@ -1,7 +1,7 @@
 .body-wrapper {
   background-color: white;
   color: black;
-  font-family: "Play", Tahoma, sans-serif;
+  font-family: "Play", Tahoma, sans;
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
@@ -66,7 +66,7 @@ a {
   margin-bottom: 22px;
 }
 .header__subtitle {
-  font-family: "Alegreya Sans", Tahoma, sans-serif;
+  font-family: "Alegreya Sans", Tahoma, sans;
   font-size: 21px;
   line-height: 25px;
   margin-bottom: 36px;
@@ -170,7 +170,7 @@ a {
 .top-navigation__link {
   font-size: 18px;
   line-height: 30px;
-  font-family: "Alegreya Sans", Tahoma, sans-serif;;
+  font-family: "Alegreya Sans", Tahoma, sans;
   color: black;
 }
 .top-navigation__address {
@@ -190,7 +190,7 @@ a {
 }
 .top-navigation__phone-link {
   font-style: normal;
-  font-family: "Play", Tahoma, sans-serif;
+  font-family: "Play", Tahoma, sans;
   color: black;
 }
 
@@ -383,10 +383,15 @@ a {
   background-color: white;
   border-radius: 50%;
 }
-.delivery__option:checked ~ .delivery__option-visible:before {
-  background-image: url("../img/design-elements/circle.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
+.delivery__option:checked ~ .delivery__option-visible:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #E01F3D;
+  position: absolute;
+  left: -27px;
+  top: 3px;
 }
 .delivery__checkbox {
   display: none;

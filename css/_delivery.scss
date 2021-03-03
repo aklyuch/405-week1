@@ -25,21 +25,27 @@
       position: relative;
       margin-left:36px;
       margin-right:16px;
+      &:before {
+        position: absolute;
+        left:-33px;
+        top:-3px;
+        content:"";
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 50%;
+      }
     }
-    &-visible:before {
+
+    &:checked ~ .delivery__option-visible:after {
+      content: "";
+      width:14px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: $red_color;
       position: absolute;
-      left:-33px;
-      top:-3px;
-      content:"";
-      width: 25px;
-      height: 25px;
-      background-color: white;
-      border-radius: 50%;
-    }
-    &:checked ~ .delivery__option-visible:before {
-      background-image: url("../img/design-elements/circle.svg");
-      background-position: center center;
-      background-repeat: no-repeat;
+      left: -27px;
+      top:3px;
     }
   }
 
