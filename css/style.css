@@ -1,7 +1,7 @@
 .body-wrapper {
   background-color: white;
   color: black;
-  font-family: "Play", Tahoma, sans;
+  font-family: "Play", Tahoma, sans-serif;
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
@@ -421,6 +421,9 @@ a {
 }
 .delivery__row_text-block {
   margin-bottom: 38px;
+}
+.delivery__row_buttons {
+  justify-content: flex-start;
 }
 .delivery__row_input {
   margin-bottom: 42px;
