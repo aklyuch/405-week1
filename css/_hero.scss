@@ -52,9 +52,8 @@
     &-wrapper
     {
       position: absolute;
-      right: 0;
-      bottom: 10px;
-
+      right: 17px;
+      bottom: 0;
     }
   }
 
@@ -65,14 +64,14 @@
   }
 
   &__gallery-scroll {
-    position: absolute;
+    position: fixed;
     width: 18px;
-    min-height:186px;
-    top:218px;
-    right:-55px;
+    min-height: 186px;
+    top: 243px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    right: calc(50% - 505px);
     &-item {
       width:18px;
       height:18px;

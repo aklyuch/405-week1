@@ -49,9 +49,24 @@ a {
   text-transform: uppercase;
   font-weight: 700;
 
+  &:hover {
+    background-color: $dark_red_color;
+  }
+
   &_empty {
     text-transform: none;
     background: none;
     border:none;
+    color: white;
+    &:hover {
+      color:$dark_red_color;
+      background: none;
+    }
   }
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }

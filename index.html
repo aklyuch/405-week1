@@ -22,7 +22,9 @@
                 <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Как мы работаем</a></li>
                 <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Контакты</a></li>
               </ul>
-              <address class="top-navigation__address"><a class="top-navigation__phone-link" href="tel:88009039090">8 800 903 90 90</a></address>
+              <address class="top-navigation__address"><a class="top-navigation__phone-link" href="tel:88009039090">
+                  <div class="top-navigation__phone-icon-wrapper"><img class="top-navigation__phone-icon" src="./img/icons/header-icon-phone.svg"></div>
+                  <div class="top-navigation__phone-label">8 800 903 90 90</div></a></address>
             </nav>
           </div>
         </header>
@@ -91,19 +93,16 @@
         </div>
         <ul class="testimonials__avatar-list">
           <li class="testimonials__avatar-item">
-            <div class="avatar">
-              <div class="avatar__wrapper avatar__wrapper_active"><a class="avatar__link" href="#"><img class="avatar__image" src="./img/testimonials/billy-photo.jpg"></a></div>
-            </div>
+            <div class="avatar"><a class="avatar__link avatar__link_active" href="#">
+                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/billy-photo.jpg"></div></a></div>
           </li>
           <li class="testimonials__avatar-item">
-            <div class="avatar">
-              <div class="avatar__wrapper"><a class="avatar__link" href="#"><img class="avatar__image" src="./img/testimonials/second-avatar.jpg"></a></div>
-            </div>
+            <div class="avatar"><a class="avatar__link" href="#">
+                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/second-avatar.jpg"></div></a></div>
           </li>
           <li class="testimonials__avatar-item">
-            <div class="avatar">
-              <div class="avatar__wrapper"><a class="avatar__link" href="#"><img class="avatar__image" src="./img/testimonials/third-avatar.jpg"></a></div>
-            </div>
+            <div class="avatar"><a class="avatar__link" href="#">
+                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/third-avatar.jpg"></div></a></div>
           </li>
         </ul>
       </div>
@@ -111,71 +110,74 @@
     <section class="delivery">
       <div class="container delivery_wrapper">
         <h3 class="delivery__title">Закажите доставку</h3>
-        <div class="delivery__row">
-          <div class="delivery__column">
-            <div class="delivery__row">
-              <div class="delivery__column-half">
-                <label class="delivery__label" for="name">Имя</label>
-                <input class="delivery__input" name="name" id="name">
+        <form class="delivery__form">
+          <div class="delivery__row">
+            <div class="delivery__column">
+              <div class="delivery__row">
+                <div class="delivery__column-half">
+                  <label class="delivery__label" for="name">Имя</label>
+                  <input class="delivery__input" name="name" id="name">
+                </div>
+                <div class="delivery__column-half">
+                  <label class="delivery__label" for="phone">Телефон</label>
+                  <input class="delivery__input" name="phone" id="phone">
+                </div>
               </div>
-              <div class="delivery__column-half">
-                <label class="delivery__label" for="phone">Телефон</label>
-                <input class="delivery__input" name="phone" id="phone">
+              <div class="delivery__row">
+                <div class="delivery__column-full">
+                  <label class="delivery__label" for="street">Улица</label>
+                  <input class="delivery__input" name="street" id="street">
+                </div>
+              </div>
+              <div class="delivery__row">
+                <div class="delivery__column-quarter">
+                  <label class="delivery__label" for="house">Дом</label>
+                  <input class="delivery__input" name="house" id="house">
+                </div>
+                <div class="delivery__column-quarter">
+                  <label class="delivery__label" for="block">Корпус</label>
+                  <input class="delivery__input" name="block" id="block">
+                </div>
+                <div class="delivery__column-quarter">
+                  <label class="delivery__label" for="apartment">Квартира</label>
+                  <input class="delivery__input" name="apartment" id="apartment">
+                </div>
+                <div class="delivery__column-quarter">
+                  <label class="delivery__label" for="floor">Этаж</label>
+                  <input class="delivery__input" name="floor" id="floor">
+                </div>
               </div>
             </div>
-            <div class="delivery__row">
-              <div class="delivery__column-full">
-                <label class="delivery__label" for="street">Улица</label>
-                <input class="delivery__input" name="street" id="street">
+            <div class="delivery__column">
+              <div class="delivery__row delivery__row_text-block">
+                <div class="delivery__text-block">
+                  <label class="delivery__label" for="comment">Комментарий</label>
+                  <textarea class="delivery__textarea" name="comment" id="comment"></textarea>
+                </div>
               </div>
-            </div>
-            <div class="delivery__row">
-              <div class="delivery__column-quarter">
-                <label class="delivery__label" for="house">Дом</label>
-                <input class="delivery__input" name="house" id="house">
+              <div class="delivery__row delivery__row_radios">
+                <label class="delivery__label" for="payment-change">
+                  <input class="delivery__option" name="payment" value="change" type="radio" id="payment-change">
+                  <div class="delivery__option-visible">Потребуется сдача</div>
+                </label>
+                <label class="delivery__label" for="payment-card">
+                  <input class="delivery__option" name="payment" value="card" type="radio" id="payment-card">
+                  <div class="delivery__option-visible">Оплата картой</div>
+                </label>
               </div>
-              <div class="delivery__column-quarter">
-                <label class="delivery__label" for="block">Корпус</label>
-                <input class="delivery__input" name="block" id="block">
+              <div class="delivery__row delivery__row_input">
+                <label class="delivery__label" for="no_recall">
+                  <input class="delivery__checkbox" name="no_recall" type="checkbox" id="no_recall">
+                  <div class="delivery__checkbox-visible">Не перезванивать</div>
+                </label>
               </div>
-              <div class="delivery__column-quarter">
-                <label class="delivery__label" for="apartment">Квартира</label>
-                <input class="delivery__input" name="apartment" id="apartment">
-              </div>
-              <div class="delivery__column-quarter">
-                <label class="delivery__label" for="floor">Этаж</label>
-                <input class="delivery__input" name="floor" id="floor">
+              <div class="delivery__row delivery__row_buttons">
+                <button class="button" type="submit">Заказать</button>
+                <button class="button button_empty" type="reset">Очистить</button>
               </div>
             </div>
           </div>
-          <div class="delivery__column">
-            <div class="delivery__row delivery__row_text-block">
-              <div class="delivery__text-block">
-                <label class="delivery__label" for="comment">Комментарий</label>
-                <textarea class="delivery__textarea" name="comment" id="comment"></textarea>
-              </div>
-            </div>
-            <div class="delivery__row delivery__row_radios">
-              <label class="delivery__label" for="payment-change">
-                <input class="delivery__option" name="payment" value="change" type="radio" id="payment-change">
-                <div class="delivery__option-visible">Потребуется сдача</div>
-              </label>
-              <label class="delivery__label" for="payment-card">
-                <input class="delivery__option" name="payment" value="card" type="radio" id="payment-card">
-                <div class="delivery__option-visible">Оплата картой</div>
-              </label>
-            </div>
-            <div class="delivery__row delivery__row_input">
-              <label class="delivery__label" for="no_recall">
-                <input class="delivery__checkbox" name="no_recall" type="checkbox" id="no_recall">
-                <div class="delivery__checkbox-visible">Не перезванивать</div>
-              </label>
-            </div>
-            <div class="delivery__row delivery__row_buttons"><a class="button" href="#" type="submit">Заказать</a>
-              <button class="button button_empty" type="reset">Очистить</button>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
   </div>

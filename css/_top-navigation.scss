@@ -19,19 +19,22 @@
   }
   &__address {
     margin-left: auto;
-    position: relative;
     font-size: 18px;
     line-height: 18px;
-    &:before {
-      content:"";
-      position: absolute;
-      top:2px;
-      left:-20px;
-      height:14px;
-      width:14px;
-      background-image: url("../img/icons/header-icon-phone.svg");
+  }
+  &__phone {
+    &-link {
+      display: flex;
+    }
+    &-icon {
+      max-width: 100%;
+      &-wrapper {
+        display: flex;
+        margin-right: 6px;
+      }
     }
   }
+
   &__phone-link {
     font-style: normal;
     font-family: $font_play;

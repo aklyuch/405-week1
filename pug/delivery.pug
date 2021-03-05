@@ -1,48 +1,49 @@
 section.delivery
     .container.delivery_wrapper
         h3.delivery__title Закажите доставку
-        .delivery__row
-            .delivery__column
-                .delivery__row
-                    .delivery__column-half
-                        label.delivery__label(for="name") Имя
-                        input.delivery__input(name="name" id="name")
-                    .delivery__column-half
-                        label.delivery__label(for="phone") Телефон
-                        input.delivery__input(name="phone" id="phone")
-                .delivery__row
-                    .delivery__column-full
-                        label.delivery__label(for="street") Улица
-                        input.delivery__input(name="street" id="street")
-                .delivery__row
-                    .delivery__column-quarter
-                        label.delivery__label(for="house") Дом
-                        input.delivery__input(name="house" id="house")
-                    .delivery__column-quarter
-                        label.delivery__label(for="block") Корпус
-                        input.delivery__input(name="block" id="block")
-                    .delivery__column-quarter
-                        label.delivery__label(for="apartment") Квартира
-                        input.delivery__input(name="apartment" id="apartment")
-                    .delivery__column-quarter
-                        label.delivery__label(for="floor") Этаж
-                        input.delivery__input(name="floor" id="floor")
-            .delivery__column
-                .delivery__row.delivery__row_text-block
-                    .delivery__text-block
-                        label.delivery__label(for="comment") Комментарий
-                        textarea.delivery__textarea(name="comment" id="comment")
-                .delivery__row.delivery__row_radios
-                    label.delivery__label(for="payment-change")
-                        input.delivery__option(name="payment" value="change" type="radio" id="payment-change")
-                        .delivery__option-visible Потребуется сдача
-                    label.delivery__label(for="payment-card")
-                        input.delivery__option(name="payment" value="card" type="radio" id="payment-card")
-                        .delivery__option-visible Оплата картой
-                .delivery__row.delivery__row_input
-                    label.delivery__label(for="no_recall")
-                        input.delivery__checkbox(name="no_recall" type="checkbox" id="no_recall")
-                        .delivery__checkbox-visible Не перезванивать
-                .delivery__row.delivery__row_buttons
-                    a.button(href="#" type="submit") Заказать
-                    button.button.button_empty(type="reset") Очистить
+        form.delivery__form
+            .delivery__row
+                .delivery__column
+                    .delivery__row
+                        .delivery__column-half
+                            label.delivery__label(for="name") Имя
+                            input.delivery__input(name="name" id="name")
+                        .delivery__column-half
+                            label.delivery__label(for="phone") Телефон
+                            input.delivery__input(name="phone" id="phone")
+                    .delivery__row
+                        .delivery__column-full
+                            label.delivery__label(for="street") Улица
+                            input.delivery__input(name="street" id="street")
+                    .delivery__row
+                        .delivery__column-quarter
+                            label.delivery__label(for="house") Дом
+                            input.delivery__input(name="house" id="house")
+                        .delivery__column-quarter
+                            label.delivery__label(for="block") Корпус
+                            input.delivery__input(name="block" id="block")
+                        .delivery__column-quarter
+                            label.delivery__label(for="apartment") Квартира
+                            input.delivery__input(name="apartment" id="apartment")
+                        .delivery__column-quarter
+                            label.delivery__label(for="floor") Этаж
+                            input.delivery__input(name="floor" id="floor")
+                .delivery__column
+                    .delivery__row.delivery__row_text-block
+                        .delivery__text-block
+                            label.delivery__label(for="comment") Комментарий
+                            textarea.delivery__textarea(name="comment" id="comment")
+                    .delivery__row.delivery__row_radios
+                        label.delivery__label(for="payment-change")
+                            input.delivery__option(name="payment" value="change" type="radio" id="payment-change")
+                            .delivery__option-visible Потребуется сдача
+                        label.delivery__label(for="payment-card")
+                            input.delivery__option(name="payment" value="card" type="radio" id="payment-card")
+                            .delivery__option-visible Оплата картой
+                    .delivery__row.delivery__row_input
+                        label.delivery__label(for="no_recall")
+                            input.delivery__checkbox(name="no_recall" type="checkbox" id="no_recall")
+                            .delivery__checkbox-visible Не перезванивать
+                    .delivery__row.delivery__row_buttons
+                        button.button(type="submit") Заказать
+                        button.button.button_empty(type="reset") Очистить
