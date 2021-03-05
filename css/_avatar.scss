@@ -1,8 +1,32 @@
 .avatar {
-  height:74px;
-  width:74px;
-  border-radius: 50%;
-  &_active {
-    border:1px solid $red_color;
+  position: relative;
+  &__wrapper {
+    height:74px;
+    width:74px;
+    border-radius: 50%;
+    overflow: hidden;
+    &:before {
+      border-radius: 50%;
+      content:"";
+      top:0;
+      left:0;
+      box-sizing: border-box;
+      width:74px;
+      height:74px;
+      position: absolute;
+      border: 4px solid transparent;
+    }
+    &_active:before {
+      border-color:$red_color;
+    }
   }
+
+  &__link {
+    display: block;
+  }
+
+  &__image {
+    max-width:100%;
+  }
+
 }

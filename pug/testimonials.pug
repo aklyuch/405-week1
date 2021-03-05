@@ -2,18 +2,25 @@ section.testimonials
     .container.testimonials_wrapper
         h3.testimonials__title Отзывы
         .testimonial
-            img.testimonial__image(src="./img/testimonials/billy-photo.jpg")
+            .testimonial__image-wrapper
+                img.testimonial__image(src="./img/testimonials/billy-photo.jpg")
             .testimonial__desc-wrapper
                 h4.testimonial__title Отличный звук
                 .testimonial__subtitle Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.
                 .testimonial__name Билли Айлиш
         ul.testimonials__avatar-list
             li.testimonials__avatar-item
-                a.testimonials__avatar-link(href="#")
-                    img.avatar.avatar_active(src="./img/testimonials/billy-avatar.jpg")
+                .avatar
+                    .avatar__wrapper.avatar__wrapper_active
+                        a.avatar__link(href="#")
+                            img.avatar__image(src="./img/testimonials/billy-photo.jpg")
             li.testimonials__avatar-item
-                a.testimonials__avatar-link(href="#")
-                    img.avatar(src="./img/testimonials/second-avatar.jpg")
+                .avatar
+                    .avatar__wrapper
+                        a.avatar__link(href="#")
+                            img.avatar__image(src="./img/testimonials/second-avatar.jpg")
             li.testimonials__avatar-item
-                a.testimonials__avatar-link(href="#")
-                    img.avatar(src="./img/testimonials/third-avatar.jpg")
+                .avatar
+                    .avatar__wrapper
+                        a.avatar__link(href="#")
+                            img.avatar__image(src="./img/testimonials/third-avatar.jpg")

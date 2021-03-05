@@ -1,5 +1,4 @@
 .why {
-  display: flex;
 
   &__title {
     font-size: 48px;
@@ -19,8 +18,8 @@
     margin-bottom: 62px;
   }
 
-  &_wrapper {
-    padding: 103px 82px 89px;
+  &__wrapper {
+    padding: 103px 0 89px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,9 +30,11 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    &-gap {
+
+    &-item {
+      flex:1;
       position: relative;
-      &:before {
+      &:not(:last-of-type):after {
         content: "";
         position: absolute;
         width: 67px;
@@ -42,10 +43,6 @@
         top: 60px;
         left: calc(100% - 34px);
       }
-    }
-
-    &-item {
-      max-width: 270px;
     }
 
   }

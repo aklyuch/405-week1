@@ -1,4 +1,4 @@
-.header {
+.hero {
   padding: 24px 0 50px;
 
   &__title {
@@ -33,14 +33,13 @@
         width:41px;
         height:41px;
       }
-      &:not(last-of-type) {
+      &:not(:last-of-type) {
         margin-right:8px;
       }
     }
   }
 
   &__wrapper{
-    padding-left:80px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -48,10 +47,15 @@
   }
 
   &__background-image {
-    position: absolute;
-    right: 180px;
-    bottom: 10px;
+    max-width:100%;
     border-radius: 50%;
+    &-wrapper
+    {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+
+    }
   }
 
   @each $feature in ('sound', 'battery', 'fast-fuel') {
@@ -65,7 +69,7 @@
     width: 18px;
     min-height:186px;
     top:218px;
-    right:125px;
+    right:-55px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
