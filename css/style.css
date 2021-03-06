@@ -392,8 +392,12 @@ button {
   background-position: bottom center;
 }
 .delivery__label {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 6px;
+}
+.delivery__label_payment {
+  margin-right: 20px;
 }
 .delivery__column:first-of-type {
   max-width: 462px;
@@ -405,19 +409,15 @@ button {
   display: none;
 }
 .delivery__option-visible {
-  position: relative;
-  margin-left: 36px;
-  margin-right: 16px;
-}
-.delivery__option-visible:before {
-  position: absolute;
-  left: -33px;
-  top: -3px;
+  margin-right: 6px;
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   background-color: white;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .delivery__option:checked ~ .delivery__option-visible:after {
   content: "";
@@ -425,28 +425,20 @@ button {
   height: 14px;
   border-radius: 7px;
   background-color: #E01F3D;
-  position: absolute;
-  left: -27px;
-  top: 3px;
+  left: 0;
+  top: 0;
 }
 .delivery__checkbox {
   display: none;
 }
 .delivery__checkbox-visible {
-  margin-left: 38px;
-  position: relative;
-}
-.delivery__checkbox-visible:before {
-  position: absolute;
-  content: "";
-  top: -6px;
-  left: -35px;
   width: 25px;
   height: 25px;
   background-color: white;
   border-radius: 4px;
+  margin-right: 6px;
 }
-.delivery__checkbox:checked ~ .delivery__checkbox-visible:before {
+.delivery__checkbox:checked ~ .delivery__checkbox-visible {
   background-image: url("../img/design-elements/checkmark.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -458,10 +450,10 @@ button {
 }
 .delivery__row_radios {
   justify-content: flex-start;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 .delivery__row_text-block {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 }
 .delivery__row_buttons {
   justify-content: flex-start;

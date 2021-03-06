@@ -6,8 +6,12 @@
   background-position: bottom center;
 
   &__label {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 6px;
+    &_payment {
+      margin-right: 20px;
+    }
   }
 
   &__column {
@@ -22,19 +26,15 @@
   &__option {
     display: none;
     &-visible {
-      position: relative;
-      margin-left:36px;
-      margin-right:16px;
-      &:before {
-        position: absolute;
-        left:-33px;
-        top:-3px;
-        content:"";
-        width: 25px;
-        height: 25px;
-        background-color: white;
-        border-radius: 50%;
-      }
+      margin-right:6px;
+      content:"";
+      width: 26px;
+      height: 26px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &:checked ~ .delivery__option-visible:after {
@@ -43,30 +43,22 @@
       height: 14px;
       border-radius: 7px;
       background-color: $red_color;
-      position: absolute;
-      left: -27px;
-      top:3px;
+      left: 0;
+      top:0;
     }
   }
 
   &__checkbox {
     display: none;
     &-visible {
-      margin-left:38px;
-      position: relative;
-    }
-
-    &-visible:before {
-      position: absolute;
-      content:"";
-      top: -6px;
-      left: -35px;
       width: 25px;
       height: 25px;
       background-color: white;
       border-radius: 4px;
+      margin-right: 6px;
     }
-    &:checked ~ .delivery__checkbox-visible:before {
+
+    &:checked ~ .delivery__checkbox-visible {
       background-image: url("../img/design-elements/checkmark.svg");
       background-position: center center;
       background-repeat: no-repeat;
@@ -79,11 +71,11 @@
     margin-bottom: 10px;
     &_radios {
       justify-content: flex-start;
-      margin-bottom: 21px;
+      margin-bottom: 18px;
     }
 
     &_text-block {
-      margin-bottom: 38px;
+      margin-bottom: 32px;
     }
     &_buttons {
       justify-content: flex-start;
