@@ -42,8 +42,8 @@ a {
 .button {
   display: inline-flex;
   box-sizing: border-box;
-  padding: 17px 41px;
-  border-radius: 100px;
+  padding: rem(17px) rem(41px);
+  border-radius: rem(100px);
   color: white;
   background-color: $red_color;
   text-transform: uppercase;

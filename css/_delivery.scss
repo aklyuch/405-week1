@@ -8,28 +8,28 @@
   &__label {
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: rem(6px);
     &_payment {
-      margin-right: 20px;
+      margin-right: rem(20px);
     }
   }
 
   &__column {
     &:first-of-type {
-      max-width: 462px;
+      max-width: rem(462px);
     }
     &:last-of-type {
-      min-width: 450px;
+      min-width: rem(450px);
     }
   }
 
   &__option {
     display: none;
     &-visible {
-      margin-right:6px;
+      margin-right:rem(6px);
       content:"";
-      width: 26px;
-      height: 26px;
+      width: rem(26px);
+      height: rem(26px);
       background-color: white;
       border-radius: 50%;
       display: flex;
@@ -39,9 +39,9 @@
 
     &:checked ~ .delivery__option-visible:after {
       content: "";
-      width:14px;
-      height: 14px;
-      border-radius: 7px;
+      width:rem(14px);
+      height:rem(14px);
+      border-radius: rem(7px);
       background-color: $red_color;
       left: 0;
       top:0;
@@ -50,12 +50,14 @@
 
   &__checkbox {
     display: none;
+
     &-visible {
-      width: 25px;
-      height: 25px;
+      width: rem(25px);
+      height: rem(25px);
       background-color: white;
       border-radius: 4px;
       margin-right: 6px;
+
     }
 
     &:checked ~ .delivery__checkbox-visible {
@@ -68,20 +70,20 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     &_radios {
       justify-content: flex-start;
-      margin-bottom: 18px;
+      margin-bottom: rem(18px);
     }
 
     &_text-block {
-      margin-bottom: 32px;
+      margin-bottom: rem(32px);
     }
     &_buttons {
       justify-content: flex-start;
     }
     &_input {
-      margin-bottom: 42px;
+      margin-bottom: rem(42px);
     }
   }
 
