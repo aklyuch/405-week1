@@ -1,10 +1,11 @@
 .testimonials {
-  &_wrapper {
+  &__wrapper {
     padding:rem(64px) 0 rem(63px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
   }
 
   &__title {
