@@ -15,11 +15,18 @@
   }
 
   &__column {
-    &:first-of-type {
-      max-width: rem(462px);
+    width:100%;
+    @media (min-width: $tablet-width + 1) {
+      &:first-of-type {
+        margin-right: rem(13px);
+      }
+      &:last-of-type {
+        margin-left: rem(13px);
+      }
     }
-    &:last-of-type {
-      min-width: rem(450px);
+
+    @media (max-width:$tablet-width) {
+      margin:0;
     }
   }
 
@@ -55,8 +62,8 @@
       width: rem(25px);
       height: rem(25px);
       background-color: white;
-      border-radius: 4px;
-      margin-right: 6px;
+      border-radius: rem(4px);
+      margin-right: rem(6px);
 
     }
 
@@ -73,7 +80,11 @@
     margin-bottom: rem(10px);
     &_radios {
       justify-content: flex-start;
-      margin-bottom: rem(18px);
+      margin-bottom: rem(10px);
+
+      @media (max-width:$phone-width) {
+        justify-content: center;
+      }
     }
 
     &_text-block {
@@ -81,9 +92,25 @@
     }
     &_buttons {
       justify-content: flex-start;
+      @media (max-width:$tablet-width) {
+        justify-content: center;
+      }
     }
     &_input {
       margin-bottom: rem(42px);
+      @media (max-width:$phone-width) {
+        justify-content: center;
+      }
+    }
+    &_phone {
+      @media (max-width: $phone-width) {
+        flex-direction: column;
+      }
+    }
+    &_wrapper {
+      @media (max-width: $tablet-width) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -92,11 +119,19 @@
   }
 
   &__column-half {
-    width:calc((100% - 16px) / 2)
+    width:calc((100% - 16px) / 2);
+
+    @media (max-width:$phone-width) {
+      width:calc((100% - 19px) / 2);
+    }
   }
 
   &__column-quarter {
-    width:calc((100% - 16px * 3) / 4)
+    width:calc((100% - 16px * 3) / 4);
+
+    @media (max-width:$phone-width) {
+      width:calc((100% - 12px * 3) / 4);
+    }
   }
 
   &__column-full {
@@ -104,33 +139,38 @@
   }
 
   &__title {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 61px;
+    margin-bottom: rem(61px);
   }
 
   &__input, &__textarea {
     outline: none;
-    border-radius: 4px;
-    padding: 18px 12px;
-    border:3px solid white;
-    box-sizing: border-box;
+    border-radius: rem(4px);
+    padding: rem(17px) rem(12px);
+    border:rem(3px) solid white;
     width: 100%;
     &:focus {
-      border:3px solid $red_color;
+      border-color: $red_color;
+    }
+
+    @media (max-width: $phone-width) {
+      padding: rem(8px) rem(10px);
+      font-size: rem(14px);
     }
   }
 
   &__textarea {
-    min-height:153px;
+    min-height:rem(153px);
   }
 
   &_wrapper {
-    padding: 68px 0 85px;
+    padding: rem(68px) 0 rem(85px);
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -5,182 +5,235 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&amp;family=Play:wght@400;700&amp;display=swap">
   <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="body-wrapper">
-    <div class="hero gray-section">
-      <div class="container hero__wrapper">
-        <header>
-          <div class="container">
-            <nav class="top-navigation"><a class="logo" href="/"><img class="logo__img" src="./img/design-elements/logo.svg"></a>
-              <ul class="top-navigation__list">
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">О нас</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Наушники</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Команда</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Цвета</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Отзывы</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Как мы работаем</a></li>
-                <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Контакты</a></li>
-              </ul>
-              <address class="top-navigation__address"><a class="top-navigation__phone-link" href="tel:88009039090">
-                  <div class="top-navigation__phone-icon-wrapper"><img class="top-navigation__phone-icon" src="./img/icons/header-icon-phone.svg"></div>
-                  <div class="top-navigation__phone-label">8 800 903 90 90</div></a></address>
-            </nav>
+    <ul class="gallery-scroll">
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link gallery-scroll__link_active" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+      <li class="gallery-scroll__item"><a class="gallery-scroll__link" href="#"></a></li>
+    </ul>
+    <section class="hero gray-section">
+      <div class="container">
+        <div class="hero__wrapper container-inner-wrapper">
+          <header class="header__wrapper">
+            <div class="container header__container">
+              <nav class="top-navigation"><a class="logo" href="/"><img class="logo__img" src="./img/design-elements/logo.svg"></a>
+                <ul class="top-navigation__list">
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">О нас</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Наушники</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Команда</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Цвета</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Отзывы</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Как мы работаем</a></li>
+                  <li class="top-navigation__list-item"><a class="top-navigation__link" href="#">Контакты</a></li>
+                </ul>
+                <address class="top-navigation__address"><a class="top-navigation__phone-link" href="tel:88009039090">
+                    <div class="top-navigation__phone-icon-wrapper">
+                      <svg class="top-navigation__phone-icon">
+                        <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <div class="top-navigation__phone-label">8 800 903 90 90</div></a></address>
+                <div class="top-navigation__mobile-button"><a class="top-navigation__mobile-button-icon" href="#"></a></div>
+              </nav>
+            </div>
+          </header>
+          <div class="hero__background-image-wrapper"><img class="hero__background-image" src="./img/headphones.jpg"></div>
+          <div class="hero__inner-wrapper">
+            <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
+            <div class="hero__subtitle">Встречайте новую версию наушников из линейки Powerbeats.</div><a class="button" href="#">Заказать</a>
           </div>
-        </header>
-        <div class="hero__wrapper">
-          <h1 class="hero__title">Беспроводные наушники Beats Solo 3</h1>
-          <div class="hero__subtitle">Встречайте новую версию наушников из линейки Powerbeats.</div><a class="button" href="#">Заказать</a>
+          <ul class="hero__features-list">
+            <li class="hero__features-list-item">
+              <div class="hero__features-list-item-icon-wrapper">
+                <svg class="hero__features-list-item-icon">
+                  <use xlink:href="./img/icons/sprite.svg#hero-feature-sound"></use>
+                </svg>
+              </div>
+              <div class="hero__features-list-item-text">Безупречный звук</div>
+            </li>
+            <li class="hero__features-list-item">
+              <div class="hero__features-list-item-icon-wrapper">
+                <svg class="hero__features-list-item-icon">
+                  <use xlink:href="./img/icons/sprite.svg#hero-feature-hours"></use>
+                </svg>
+              </div>
+              <div class="hero__features-list-item-text">До 40 часов работы</div>
+            </li>
+            <li class="hero__features-list-item">
+              <div class="hero__features-list-item-icon-wrapper">
+                <svg class="hero__features-list-item-icon">
+                  <use xlink:href="./img/icons/sprite.svg#hero-feature-fast-fuel"></use>
+                </svg>
+              </div>
+              <div class="hero__features-list-item-text">Технология Fast Fuel</div>
+            </li>
+          </ul>
         </div>
-        <ul class="hero__features-list">
-          <li class="hero__features-list-item hero__feature-sound">Безупречный звук</li>
-          <li class="hero__features-list-item hero__feature-battery">До 40 часов работы</li>
-          <li class="hero__features-list-item hero__feature-fast-fuel">Технология Fast Fuel</li>
-        </ul>
-        <div class="hero__background-image-wrapper"><img class="hero__background-image" src="./img/headphones.jpg"></div>
-        <ul class="hero__gallery-scroll">
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link hero__gallery-scroll-link_active" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-          <li class="hero__gallery-scroll-item"><a class="hero__gallery-scroll-link" href="#"></a></li>
-        </ul>
       </div>
-    </div>
+    </section>
     <section class="why">
-      <div class="container why__wrapper">
-        <h2 class="why__title">Почему beats solo 3?</h2>
-        <p class="why__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко подключать наушники к различным устройствам Apple.</p>
-        <ul class="why__features-list">
-          <li class="why__features-list-item">
-            <div class="feature">
-              <div class="feature__image-wrapper"><img class="feature__image" src="./img/icons/why-icon-battery.svg"></div>
-              <h3 class="feature__heading">40 часов работы</h3>
-              <p class="feature__subheading">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</p>
-            </div>
-          </li>
-          <li class="why__features-list-item">
-            <div class="feature">
-              <div class="feature__image-wrapper"><img class="feature__image" src="./img/icons/why-icon-sound.svg"></div>
-              <h3 class="feature__heading">Фирменное звучание</h3>
-              <p class="feature__subheading">Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</p>
-            </div>
-          </li>
-          <li class="why__features-list-item">
-            <div class="feature">
-              <div class="feature__image-wrapper"><img class="feature__image" src="./img/icons/why-icon-charging.svg"></div>
-              <h3 class="feature__heading">Быстрая зарядка</h3>
-              <p class="feature__subheading">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
-            </div>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="why__wrapper container-inner-wrapper">
+          <h2 class="why__title">Почему beats solo 3?</h2>
+          <p class="why__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко подключать наушники к различным устройствам Apple.</p>
+          <ul class="why__features-list">
+            <li class="why__features-list-item">
+              <div class="feature">
+                <div class="feature__image-wrapper">
+                  <svg class="feature__icon">
+                    <use xlink:href="./img/icons/sprite.svg#why-icon-battery"></use>
+                  </svg>
+                </div>
+                <div class="feature__text-wrapper">
+                  <h3 class="feature__heading">40 часов работы</h3>
+                  <p class="feature__subheading">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</p>
+                </div>
+              </div>
+            </li>
+            <li class="why__features-list-item">
+              <div class="feature">
+                <div class="feature__image-wrapper">
+                  <svg class="feature__icon">
+                    <use xlink:href="./img/icons/sprite.svg#why-icon-sound"></use>
+                  </svg>
+                </div>
+                <div class="feature__text-wrapper">
+                  <h3 class="feature__heading">Фирменное звучание</h3>
+                  <p class="feature__subheading">Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились.</p>
+                </div>
+              </div>
+            </li>
+            <li class="why__features-list-item">
+              <div class="feature">
+                <div class="feature__image-wrapper">
+                  <svg class="feature__icon">
+                    <use xlink:href="./img/icons/sprite.svg#why-icon-charging"></use>
+                  </svg>
+                </div>
+                <div class="feature__text-wrapper">
+                  <h3 class="feature__heading">Быстрая зарядка</h3>
+                  <p class="feature__subheading">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="testimonials">
-      <div class="container testimonials_wrapper">
-        <h3 class="testimonials__title">Отзывы</h3>
-        <div class="testimonial">
-          <div class="testimonial__image-wrapper"><img class="testimonial__image" src="./img/testimonials/billy-photo.jpg"></div>
-          <div class="testimonial__desc-wrapper">
-            <h4 class="testimonial__title">Отличный звук</h4>
-            <div class="testimonial__subtitle">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
-            <div class="testimonial__name">Билли Айлиш</div>
+      <div class="container">
+        <div class="testimonials_wrapper container-inner-wrapper">
+          <h3 class="testimonials__title">Отзывы</h3>
+          <div class="testimonial">
+            <div class="testimonial__image-wrapper"><img class="testimonial__image" src="./img/testimonials/billy-photo.jpg"></div>
+            <div class="testimonial__desc-wrapper">
+              <h4 class="testimonial__title">Отличный звук</h4>
+              <div class="testimonial__subtitle">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно.</div>
+              <div class="testimonial__name">Билли Айлиш</div>
+            </div>
           </div>
+          <ul class="testimonials__avatar-list">
+            <li class="testimonials__avatar-item">
+              <div class="avatar"><a class="avatar__link avatar__link_active" href="#">
+                  <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/billy-photo.jpg"></div></a></div>
+            </li>
+            <li class="testimonials__avatar-item">
+              <div class="avatar"><a class="avatar__link" href="#">
+                  <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/second-avatar.jpg"></div></a></div>
+            </li>
+            <li class="testimonials__avatar-item">
+              <div class="avatar"><a class="avatar__link" href="#">
+                  <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/third-avatar.jpg"></div></a></div>
+            </li>
+          </ul>
         </div>
-        <ul class="testimonials__avatar-list">
-          <li class="testimonials__avatar-item">
-            <div class="avatar"><a class="avatar__link avatar__link_active" href="#">
-                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/billy-photo.jpg"></div></a></div>
-          </li>
-          <li class="testimonials__avatar-item">
-            <div class="avatar"><a class="avatar__link" href="#">
-                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/second-avatar.jpg"></div></a></div>
-          </li>
-          <li class="testimonials__avatar-item">
-            <div class="avatar"><a class="avatar__link" href="#">
-                <div class="avatar__wrapper"><img class="avatar__image" src="./img/testimonials/third-avatar.jpg"></div></a></div>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="delivery">
-      <div class="container delivery_wrapper">
-        <h3 class="delivery__title">Закажите доставку</h3>
-        <form class="delivery__form">
-          <div class="delivery__row">
-            <div class="delivery__column">
-              <div class="delivery__row">
-                <div class="delivery__column-half">
-                  <label class="delivery__label" for="name">Имя</label>
-                  <input class="delivery__input" name="name" id="name">
+      <div class="container">
+        <div class="delivery_wrapper container-inner-wrapper">
+          <h3 class="delivery__title">Закажите доставку</h3>
+          <form class="delivery__form">
+            <div class="delivery__row delivery__row_wrapper">
+              <div class="delivery__column">
+                <div class="delivery__row">
+                  <div class="delivery__column-half">
+                    <label class="delivery__label" for="name">Имя</label>
+                    <input class="delivery__input" name="name" id="name">
+                  </div>
+                  <div class="delivery__column-half">
+                    <label class="delivery__label" for="phone">Телефон</label>
+                    <input class="delivery__input" name="phone" id="phone">
+                  </div>
                 </div>
-                <div class="delivery__column-half">
-                  <label class="delivery__label" for="phone">Телефон</label>
-                  <input class="delivery__input" name="phone" id="phone">
+                <div class="delivery__row">
+                  <div class="delivery__column-full">
+                    <label class="delivery__label" for="street">Улица</label>
+                    <input class="delivery__input" name="street" id="street">
+                  </div>
+                </div>
+                <div class="delivery__row">
+                  <div class="delivery__column-quarter">
+                    <label class="delivery__label" for="house">Дом</label>
+                    <input class="delivery__input" name="house" id="house">
+                  </div>
+                  <div class="delivery__column-quarter">
+                    <label class="delivery__label" for="block">Корпус</label>
+                    <input class="delivery__input" name="block" id="block">
+                  </div>
+                  <div class="delivery__column-quarter">
+                    <label class="delivery__label" for="apartment">Квартира</label>
+                    <input class="delivery__input" name="apartment" id="apartment">
+                  </div>
+                  <div class="delivery__column-quarter">
+                    <label class="delivery__label" for="floor">Этаж</label>
+                    <input class="delivery__input" name="floor" id="floor">
+                  </div>
                 </div>
               </div>
-              <div class="delivery__row">
-                <div class="delivery__column-full">
-                  <label class="delivery__label" for="street">Улица</label>
-                  <input class="delivery__input" name="street" id="street">
+              <div class="delivery__column">
+                <div class="delivery__row delivery__row_text-block">
+                  <div class="delivery__text-block">
+                    <label class="delivery__label" for="comment">Комментарий</label>
+                    <textarea class="delivery__textarea" name="comment" id="comment"></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="delivery__row">
-                <div class="delivery__column-quarter">
-                  <label class="delivery__label" for="house">Дом</label>
-                  <input class="delivery__input" name="house" id="house">
+                <div class="delivery__row delivery__row_radios">
+                  <label class="delivery__label delivery__label_payment" for="payment-change">
+                    <input class="delivery__option" name="payment" value="change" type="radio" id="payment-change">
+                    <div class="delivery__option-visible"></div>
+                    <div class="delivery__option-text">Потребуется сдача</div>
+                  </label>
+                  <label class="delivery__label" for="payment-card">
+                    <input class="delivery__option" name="payment" value="card" type="radio" id="payment-card">
+                    <div class="delivery__option-visible"></div>
+                    <div class="delivery__option-text">Оплата картой</div>
+                  </label>
                 </div>
-                <div class="delivery__column-quarter">
-                  <label class="delivery__label" for="block">Корпус</label>
-                  <input class="delivery__input" name="block" id="block">
+                <div class="delivery__row delivery__row_input">
+                  <label class="delivery__label" for="no_recall">
+                    <input class="delivery__checkbox" name="no_recall" type="checkbox" id="no_recall">
+                    <div class="delivery__checkbox-visible"></div>
+                    <div class="delivery__option-text">Не перезванивать</div>
+                  </label>
                 </div>
-                <div class="delivery__column-quarter">
-                  <label class="delivery__label" for="apartment">Квартира</label>
-                  <input class="delivery__input" name="apartment" id="apartment">
-                </div>
-                <div class="delivery__column-quarter">
-                  <label class="delivery__label" for="floor">Этаж</label>
-                  <input class="delivery__input" name="floor" id="floor">
+                <div class="delivery__row delivery__row_buttons">
+                  <button class="button" type="submit">Заказать</button>
+                  <button class="button button_empty" type="reset">Очистить</button>
                 </div>
               </div>
             </div>
-            <div class="delivery__column">
-              <div class="delivery__row delivery__row_text-block">
-                <div class="delivery__text-block">
-                  <label class="delivery__label" for="comment">Комментарий</label>
-                  <textarea class="delivery__textarea" name="comment" id="comment"></textarea>
-                </div>
-              </div>
-              <div class="delivery__row delivery__row_radios">
-                <label class="delivery__label delivery__label_payment" for="payment-change">
-                  <input class="delivery__option" name="payment" value="change" type="radio" id="payment-change">
-                  <div class="delivery__option-visible"></div>
-                  <div class="delivery__option-text">Потребуется сдача</div>
-                </label>
-                <label class="delivery__label" for="payment-card">
-                  <input class="delivery__option" name="payment" value="card" type="radio" id="payment-card">
-                  <div class="delivery__option-visible"></div>
-                  <div class="delivery__option-text">Оплата картой</div>
-                </label>
-              </div>
-              <div class="delivery__row delivery__row_input">
-                <label class="delivery__label" for="no_recall">
-                  <input class="delivery__checkbox" name="no_recall" type="checkbox" id="no_recall">
-                  <div class="delivery__checkbox-visible"></div>
-                  <div class="delivery__option-text">Не перезванивать</div>
-                </label>
-              </div>
-              <div class="delivery__row delivery__row_buttons">
-                <button class="button" type="submit">Заказать</button>
-                <button class="button button_empty" type="reset">Очистить</button>
-              </div>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   </div>

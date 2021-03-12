@@ -1,5 +1,5 @@
-header
-    .container
+header.header__wrapper
+    .container.header__container
         nav.top-navigation
             a.logo(href="/")
                 img.logo__img(src="./img/design-elements/logo.svg")
@@ -21,5 +21,8 @@ header
             address.top-navigation__address
                 a.top-navigation__phone-link(href="tel:88009039090")
                     .top-navigation__phone-icon-wrapper
-                        img.top-navigation__phone-icon(src="./img/icons/header-icon-phone.svg")
+                        svg.top-navigation__phone-icon
+                            use(xlink:href="./img/icons/sprite.svg#phone")
                     .top-navigation__phone-label 8 800 903 90 90
+            .top-navigation__mobile-button
+                a.top-navigation__mobile-button-icon(href="#")

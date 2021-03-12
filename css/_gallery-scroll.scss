@@ -1,0 +1,44 @@
+.gallery-scroll {
+  position: fixed;
+  width: rem(18px);
+  min-height: rem(186px);
+  top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: max(calc((100vw - 940px)/2 - 46px), 23px);
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &__item {
+    width:rem(18px);
+    height:rem(18px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    content:"";
+    height:rem(6px);
+    width:rem(6px);
+    border-radius: 50%;
+    background-color: rgba(#292929, .6);
+  }
+  &__link_active {
+    background-color: $red_color;
+    &:before {
+      content:"";
+      border: rem(1px) solid $red_color;
+      width: rem(14px);
+      height: rem(14px);
+      border-radius: 50%;
+      position: absolute;
+      top: rem(1px);
+      left: rem(1px);
+    }
+  }
+}

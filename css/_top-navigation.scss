@@ -1,26 +1,46 @@
 .top-navigation {
   display: flex;
   align-items: center;
-  margin-bottom: 94px;
-  max-width: 915px;
+  margin-bottom: rem(94px);
+  max-width: rem(915px);
+
+  @media (max-width: $tablet-width) {
+    height: rem(91px);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(107px);
+  }
 
   &__list {
     display: flex;
-    margin-left: 38px;
-    &-item:not(:first-of-type) {
-      margin-left:27px;
+    flex-wrap: wrap;
+    margin-left: rem(36px);
+    &-item {
+      margin-right:rem(28px);
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $tablet-width) {
+      display: none;
     }
   }
   &__link {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: rem(18px);
+    line-height: rem(30px);
     font-family: $font_alegreya;
     color: black;
   }
   &__address {
     margin-left: auto;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: rem(18px);
+    line-height: rem(18px);
+    min-width: rem(152px);
+
+    @media (max-width:$tablet-width) {
+      display: none;
+    }
   }
   &__phone {
     &-link {
@@ -28,9 +48,11 @@
     }
     &-icon {
       max-width: 100%;
+      height: 100%;
       &-wrapper {
-        display: flex;
-        margin-right: 6px;
+        width: rem(14px);
+        height: rem(14px);
+        margin-right: rem(6px);
       }
     }
   }
@@ -39,6 +61,23 @@
     font-style: normal;
     font-family: $font_play;
     color: black;
+  }
+
+  &__mobile-button {
+    display: none;
+
+    &-icon:before {
+      content:url("../img/icons/gamburger.svg");
+    }
+
+    @media (max-width:$tablet-width) {
+      display: flex;
+      width: rem(24px);
+      height: rem(24px);
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
