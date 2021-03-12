@@ -1,0 +1,16 @@
+.header__container {
+  min-height: auto;
+  padding: rem(24px) 0 rem(48px);
+  @media (max-width: $tablet-width) {
+    padding: 0;
+
+  }
+}
+
+.header__wrapper {
+  margin-bottom: rem(94px);
+  width: 100%;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

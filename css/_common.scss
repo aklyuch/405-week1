@@ -43,7 +43,7 @@ img {
   max-width: rem(1100px);
   padding: 0 rem((1100px - $container-desktop) / 2);
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
 
   @media screen and (max-width: $tablet-width) {
     max-width: rem($tablet-width);
@@ -56,24 +56,12 @@ img {
   }
 }
 
-.container-inner-wrapper {
-  height: 100vh;
-}
 
 .container-tablet-wider {
   @media screen and (max-width: $tablet-width) and (min-width: $phone-width + 1) {
     max-width: rem($tablet-width + 20px);
     padding: 0;
   }
-}
-
-.header__container {
-  height: auto;
-  padding: 0;
-}
-
-.header__wrapper {
-  width: 100%;
 }
 
 .gray-section {

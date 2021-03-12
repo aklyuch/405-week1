@@ -1,14 +1,13 @@
 .top-navigation {
   display: flex;
   align-items: center;
-  margin-bottom: rem(94px);
   max-width: rem(915px);
 
   @media (max-width: $tablet-width) {
     height: rem(91px);
     align-items: center;
     justify-content: space-between;
-    margin-bottom: rem(107px);
+    margin-bottom: 0;
   }
 
   &__list {
