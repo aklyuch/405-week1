@@ -5,6 +5,11 @@
     width:rem(74px);
     border-radius: 50%;
     overflow: hidden;
+
+    @media screen and (max-width: $phone-width){
+      height: rem(64px);
+      width: rem(64px);
+    }
     &:before {
       border-radius: 50%;
       content:"";
@@ -15,6 +20,10 @@
       position: absolute;
       border: rem(4px) solid transparent;
       box-sizing: border-box;
+      @media screen and (max-width: $phone-width){
+        height: rem(64px);
+        width: rem(64px);
+      }
     }
   }
 

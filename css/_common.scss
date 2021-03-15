@@ -43,9 +43,8 @@ img {
   max-width: rem(1100px);
   padding: 0 rem((1100px - $container-desktop) / 2);
   margin: 0 auto;
-  min-height: 100vh;
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-breakpoint) {
     max-width: rem($tablet-width);
     padding: 0 rem(22px);
   }
@@ -56,11 +55,9 @@ img {
   }
 }
 
-
 .container-tablet-wider {
-  @media screen and (max-width: $tablet-width) and (min-width: $phone-width + 1) {
-    max-width: rem($tablet-width + 20px);
-    padding: 0;
+  @media screen and (max-width: $tablet-breakpoint) and (min-width: $phone-width + 1) {
+    padding: rem(1px);
   }
 }
 
@@ -70,6 +67,15 @@ img {
 
 .gray-light-section {
   background-color: $gray_color;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  @media (max-width: $phone-width) {
+    min-height: 100vh;
+    height: auto;
+  }
 }
 
 .button {

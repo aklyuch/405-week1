@@ -9,7 +9,7 @@
   justify-content: space-between;
   right: max(calc((100vw - 940px)/2 - 46px), 23px);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-breakpoint) {
     display: none;
   }
 

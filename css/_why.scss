@@ -9,7 +9,7 @@
     margin-bottom: rem(18px);
 
     @media (max-width:$phone-width) {
-      font-size: rem(36px);
+      font-size: rem(32px);
     }
   }
 
@@ -54,7 +54,7 @@
         top: rem(60px);
         left: calc(100% - 2rem);
 
-        @media screen and (max-width:$tablet-width) {
+        @media screen and (max-width:$tablet-breakpoint) {
           content: none;
         }
       }

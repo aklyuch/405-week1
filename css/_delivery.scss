@@ -5,6 +5,12 @@
   background-size: cover;
   background-position: bottom center;
 
+  &__form {
+    @media (min-width:$phone-width + 1) and (max-width:$tablet-width) {
+      max-width: 466px;
+    }
+  }
+
   &__label {
     display: flex;
     align-items: center;
@@ -16,7 +22,7 @@
 
   &__column {
     width:100%;
-    @media (min-width: $tablet-width + 1) {
+    @media (min-width: $tablet-breakpoint + 1) {
       &:first-of-type {
         margin-right: rem(13px);
       }
@@ -25,7 +31,7 @@
       }
     }
 
-    @media (max-width:$tablet-width) {
+    @media (max-width:$tablet-breakpoint) {
       margin:0;
     }
   }
@@ -92,7 +98,7 @@
     }
     &_buttons {
       justify-content: flex-start;
-      @media (max-width:$tablet-width) {
+      @media (max-width:$tablet-breakpoint) {
         justify-content: center;
       }
     }
@@ -108,7 +114,7 @@
       }
     }
     &_wrapper {
-      @media (max-width: $tablet-width) {
+      @media (max-width: $tablet-breakpoint) {
         flex-direction: column;
       }
     }
@@ -144,6 +150,9 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: rem(61px);
+    @media (max-width: $phone-width) {
+      font-size: rem(32px);
+    }
   }
 
   &__input, &__textarea {

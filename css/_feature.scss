@@ -23,7 +23,7 @@
     color:#666666;
     max-width: rem(250px);
 
-    @media screen and (max-width:$tablet-width) and (min-width: $phone-width + 1){
+    @media screen and (max-width:$tablet-breakpoint) and (min-width: $phone-width + 1){
       max-width:95%;
     }
   }
@@ -53,6 +53,7 @@
     @media (max-width: $phone-width) {
       margin-right: rem(12px);
       margin-bottom: 0;
+      flex-shrink: 0;
     }
   }
 
